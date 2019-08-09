@@ -36,7 +36,7 @@ const User = db.define('user', {
 // make a hyuuuuuuuk
 // it slugs
 Page.beforeValidate((page, opts) => {
-    page.slug = page.title.replace(/\s+/g, '_').replace(/\W/g, '')
+    page.slug = page.title.replace(/\s+/g, '_').replace(/\W/g, '').toLowerCase()
 })
 
 module.exports = { Page, User, db};

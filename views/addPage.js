@@ -37,7 +37,7 @@ module.exports = () => layout(html`
     <div class="form-group">
       <label for="pagestatus" class="col-sm-2 control-label">Page Status</label>
       <div class="col-sm-10">
-        <input placeholder="Your Page Status" id="pagestatus" name="pagestatus" type="text" class="form-control">
+        <input placeholder="Your Page Status" id="status" name="pagestatus" type="text" class="form-control">
       </div>
     </div>
 

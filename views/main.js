@@ -9,8 +9,11 @@ module.exports = (pages) => layout(html`
     <button type="submit">Search</button>
   </form>
   <hr>
+  <h1>${pages.count} articles on this site</h1>
   <ul class="list-unstyled">
     <ul>
-      <!-- PLACEHOLDER LIST OF PAGES -->
+      ${pages.rows.map(page => html`
+        <a href="/wiki/${page.slug}">${page.title}</a><br>
+      `)}
     </ul>
   </ul>`);
