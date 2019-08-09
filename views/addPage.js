@@ -6,14 +6,18 @@ module.exports = () => layout(html`
   <hr>
   <form method="POST" action="/wiki/">
     
-    <div>
+    <div class="form-group">
       <label for="name" class="col-sm-2 control-label">Name</label>
-      <input placeholder="Type Your Name Here!" id="author-name" name="author" type="text" class="form-control">
+      <div class="col-sm-10">
+        <input placeholder="Type Your Name Here!" id="author-name" name="author" type="text" class="form-control">
+      </div>
     </div>
     
-    <div>
+    <div class="form-group">
       <label for="email" class="col-sm-2 control-label">Email</label>
-      <input placeholder="Your Email?" id="email" name="email" type="email" class="form-control">
+      <div class="col-sm-10">
+        <input placeholder="Your Email?" id="email" name="email" type="email" class="form-control">
+      </div>
     </div>
     
     <div class="form-group">
@@ -23,14 +27,18 @@ module.exports = () => layout(html`
       </div>
     </div>
 
-    <div>
+    <div class="form-group">
     <label for="content" class="col-sm-2 control-label">Content</label>
-      <input placeholder="Your Content Here!" id="textarea" name="content" type="textarea" class="form-control">
+      <div class="col-sm-10">
+        <textarea placeholder="Your Content Here!" id="textarea" name="content" type="textarea" class="form-control"></textarea>
+      </div>
     </div>
     
-    <div>
+    <div class="form-group">
       <label for="pagestatus" class="col-sm-2 control-label">Page Status</label>
-      <input placeholder="Your Page Status" id="pagestatus" name="pagestatus" type="text" class="form-control">
+      <div class="col-sm-10">
+        <input placeholder="Your Page Status" id="pagestatus" name="pagestatus" type="text" class="form-control">
+      </div>
     </div>
 
     <div class="col-sm-offset-2 col-sm-10">
